@@ -1,0 +1,16 @@
+# 备份文件
+*.bak
+*.bak2
+*.bak3
+*.old
+
+# Python脚本
+*.py
+
+# 临时数据
+*.json
+!package.json
+
+# 临时文件
+*.log
+*.tmp
