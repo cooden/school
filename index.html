@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -13,8 +14,8 @@
     <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
 </head>
 <body>
-    <div id="main" _echarts_instance_="ec_1790950745574" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;"><div style="position: relative; width: 1141px; height: 830px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas data-zr-dom-id="zr_0" width="1141" height="830" style="position: absolute; left: 0px; top: 0px; width: 1141px; height: 830px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div class="" style="position: absolute; display: block; border-style: solid; white-space: nowrap; z-index: 9999999; box-shadow: rgba(0, 0, 0, 0.2) 1px 2px 10px; transition: opacity 0.2s cubic-bezier(0.23, 1, 0.32, 1), visibility 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgb(255, 255, 255); border-width: 1px; border-radius: 4px; color: rgb(102, 102, 102); font: 14px / 21px &quot;Microsoft YaHei&quot;; padding: 10px; top: 0px; left: 0px; transform: translate3d(310px, 221px, 0px); border-color: rgb(223, 242, 248); pointer-events: none; visibility: hidden; opacity: 0;"><b>从化区</b><br>从化区职业技术学校<br>广东省岭南工商第一技师学院<br>广州市从化区高级技工学校<br>广州通用职业技术学校<br>广州城建技工学校<br>广州市实验技工学校<br>广东华夏高级技工学校<br>广东南粤技工学校</div></div>
-    <button id="back-button" onclick="window.location.href='index.html'">返回中国地图</button>
+    <div id="main"></div>
+    <!-- <button id="back-button" onclick="window.location.href='index.html'">返回中国地图</button> -->
     <script type="text/javascript">
         // 初始化ECharts实例
         var myChart = echarts.init(document.getElementById('main'));
@@ -25,26 +26,40 @@
                 
                 // 准备数据（示例数据）
                 var data = [
-                    {name: '天河区', value:1, description: '广州市幼儿师范学校<br/>广州市信息工程职业学校<br/>广东省对外贸易职业技术学校<br/>广东省电子职业技术学校<br/>广州市轻工职业学校<br/>广州市艺术学校<br/>广州市天河职业高级中学<br/>广州市政职业学校<br/>广州市城市建设职业学校<br/>广东省华侨职业技术学校<br/>广东省环境保护职业技术学校<br/>广东省交通运输高级技工学校<br/>广东省新闻出版高级技工学校<br/>广东省电子商务高级技工学校<br/>广东省高级技工学校<br/>广州市蓝天技工学校<br/>广东现代信息技工学校<br/>广东岭南现代高级技工学校'},
-                    {name: '越秀区', value:1, description: '广东省理工职业技术学校<br/>广州市财经职业学校<br/>广州市电子信息学校<br/>广州市贸易职业高级中学<br/>广州市公用事业高级技工学校<br/>广州市立信职业技术学校'},
-                    {name: '海珠区', value:1, description: '广美附属中等美术学校<br/>广州市海珠工艺美术职业学校<br/>广州市纺织服装职业学校<br/>广东省轻工职业技术学校<br/>广州市旅游商务职业学校<br/>广州市土地房产职业学校<br/>广东省水产学校<br/>广东省民政职业技术学校<br/>广东省轻工业高级技工学校<br/>广州海运技工学校<br/>广州穗华职业技术学校'},
-                    {name: '荔湾区', value:1, description: '广东省商业职业技术学校<br/>广州造船厂技工学校<br/>广州钢铁企业集团有限公司技工学校<br/>广州市侨光财经职业技术学校'},
+                    {name: '天河区', value:18, description: '广州市幼儿师范学校<br/>广州市信息工程职业学校<br/>广东省对外贸易职业技术学校<br/>广东省电子职业技术学校<br/>广州市轻工职业学校<br/>广州市艺术学校<br/>广州市天河职业高级中学<br/>广州市政职业学校<br/>广州市城市建设职业学校<br/>广东省华侨职业技术学校<br/>广东省环境保护职业技术学校<br/>广东省交通运输技师学院<br/>广东省新闻出版技师学院<br/>广东省电子商务技师学院<br/>广州市蓝天技工学校<br/>广东现代信息技工学校<br/>广东岭南现代技师学院'},
+                    {name: '越秀区', value:6, description: '广东省理工职业技术学校<br/>广州市财经职业学校<br/>广州市电子信息学校<br/>广州市贸易职业高级中学<br/>广州市公用事业技师学院<br/>广州市立信职业技术学校'},
+                    {name: '海珠区', value:11, description: '广美附属中等美术学校<br/>广州市海珠工艺美术职业学校<br/>广州市纺织服装职业学校<br/>广东省轻工职业技术学校<br/>广州市旅游商务职业学校<br/>广州市土地房产职业学校<br/>广东省水产学校<br/>广东省民政职业技术学校<br/>广东省轻工业技师学院<br/>广州海运技工学校<br/>广州穗华职业技术学校'},
+                    {name: '荔湾区', value:4, description: '广东省商业职业技术学校<br/>广州造船厂技工学校<br/>广州钢铁企业集团有限公司技工学校<br/>广州市侨光财经职业技术学校'},
                     {name: '三元里', value:1, description: '广州市建筑工程职业学校'},
                     {name: '松洲', value:1, description: '广州市机电技师学院'},
-                    {name: '嘉禾', value:1, description: '广州市司法职业学校<br/>广州市交通运输职业学校<br/>广东省经济贸易职业技术学校'},
-                    {name: '同和', value:1, description: '广东省劳动就业技工学校<br/>广东省国防科技技工学校'},
+                    {name: '嘉禾', value:3, description: '广州市司法职业学校<br/>广州市交通运输职业学校<br/>广东省经济贸易职业技术学校'},
+                    {name: '同和', value:2, description: '广东省劳动就业技工学校<br/>广东省国防科技技工学校'},
                     {name: '太和镇', value:1, description: '广东省财政职业技术学校'},
                     {name: '人和镇', value:1, description: '广东应用技工学校'},
                     {name: '钟落潭镇', value:1, description: '广州市轻工技师学院'},
-                    {name: '江高镇', value:1, description: '广东省电子信息高级技工学校<br/>广东省机械技师学院<br/>广州科大外语商务职业技术学校<br/>广州市白云工商技师学院'},
+                    {name: '江高镇', value:4, description: '广东省电子信息技师学院<br/>广东省机械技师学院<br/>广州科大外语商务职业技术学校<br/>广州市白云工商技师学院'},
                     {name: '新市', value:1, description: '广州市商贸职业学校'},
                     {name: '黄石', value:1, description: '广州市技师学院'},
                     {name: '永平', value:1, description: '广州市江南职业技术学校'},
-                    {name: '黄埔区', value:1, description: '广州市黄埔职业技术学校<br/>广东黄埔卫生职业技术学校<br/>广东省城市建设技师学院<br/>广州文冲船厂技工学校<br/>广州市交通技师学院<br/>广州港技工学校<br/>广州航道技工学校<br/>广州开发区技工学校<br/>广东省航道技工学校'},
-                    {name: '番禺区', value:1, description: '广州市番禺区工商职业技术学校<br/>广州市新造职业技术学校<br/>广州财经商贸职业学校<br/>广东省冶金技工学校<br/>广州南华工贸技工学校<br/>广州市高新医药与食品技工学校'},
-                    {name: '花都区', value:1, description: '花都区理工职业技术学校<br/>广州市花都区职业技术学校<br/>广东省华美技工学校<br/>广州市花都区技工学校<br/>广东华文航空艺术职业学校<br/>广州市华风技工学校<br/>广州市现代工业技工学校<br/>广东高新技术技工学校<br/>广东花城工商技工学校'},
-                    {name: '从化区', value:1, description: '从化区职业技术学校<br/>广东省岭南工商第一技师学院<br/>广州市从化区高级技工学校<br/>广州通用职业技术学校<br/>广州城建技工学校<br/>广州市实验技工学校<br/>广东华夏高级技工学校<br/>广东南粤技工学校'},
-                    {name: '增城区', value:1, description: '增城区卫生职业技术学校<br/>广州市增城区职业技术学校<br/>广州市金领技工学校<br/>广东北达技工学校<br/>广东省环保技工学校<br/>广州华商技工学校<br/>广东省华立技师学院'},
+                    {name: '棠景', value:0, description: ''},
+                    {name: '京溪', value:0, description: ''},
+                    {name: '均禾', value:0, description: ''},
+                    {name: '金沙', value:0, description: ''},
+                    {name: '云城', value:0, description: ''},
+                    {name: '鹤龙', value:0, description: ''},
+                    {name: '白云湖', value:0, description: ''},
+                    {name: '石门', value:0, description: ''},
+                    {name: '龙归', value:0, description: ''},
+                    {name: '大源', value:0, description: ''},
+                    {name: '黄埔区', value:9, description: '广州市黄埔职业技术学校<br/>广东黄埔卫生职业技术学校<br/>广东省城市建设技师学院<br/>广州文冲船厂技工学校<br/>广州市交通技师学院<br/>广州港技工学校<br/>广州航道技工学校<br/>广州开发区技工学校<br/>广东省航道技工学校'},
+                    {name: '番禺区', value:6, description: '广州市番禺区工商职业技术学校<br/>广州市新造职业技术学校<br/>广州财经商贸职业学校<br/>广东省冶金技工学校<br/>广州南华工贸技工学校<br/>广州市高新医药与食品技工学校'},
+                    {name: '花都区', value:9, description: '花都区理工职业技术学校<br/>广州市花都区职业技术学校<br/>广东省华美技工学校<br/>广州市花都区技工学校<br/>广东华文航空艺术职业学校<br/>广州市华风技工学校<br/>广州市现代工业技工学校<br/>广东高新技术技工学校<br/>广东花城工商技工学校'},
+                    {name: '从化区', value:8, description: '从化区职业技术学校<br/>广东省岭南工商第一技师学院<br/>广州市从化区技师学院<br/>广州通用职业技术学校<br/>广州城建技工学校<br/>广州市实验技工学校<br/>广东华夏技师学院<br/>广东南粤技工学校'},
+                    {name: '增城区', value:7, description: '增城区卫生职业技术学校<br/>广州市增城区职业技术学校<br/>广州市金领技工学校<br/>广东北达技工学校<br/>广东省环保技工学校<br/>广州华商技工学校<br/>广东省华立技师学院'},
+                    {name: '南沙区', value:0, description: ''},
+                    {name: '石井', value:0, description: ''},
+                    {name: '同德', value:0, description: ''},
+                    {name: '景泰', value:0, description: ''},
                 ];
                 
                 // 指定图表的配置项和数据
@@ -72,12 +87,12 @@
                     },
                     visualMap: {
                         min: 0,
-                        max: 200,
-                        text: ['高', '低'],
+                        max: 12,
+                        text: ['多', '少'],
                         realtime: false,
                         calculable: true,
                         inRange: {
-                            color: ['#e0f3f8', '#abd9e9', '#74add1', '#4575b4', '#313695']
+                            color: ['#ffffff', '#d6eef8', '#a3d5ec', '#82c6e2', '#61b6d8', '#40a7cf']
                         }
                     },
                     series: [
@@ -151,5 +166,28 @@
                     myChart.resize();
                 });
     </script>
-
-</body></html>
+    <script>
+    /* 技校分布 - 流量统计 SDK (内嵌版，参考 cooden/admin tracker.js) */
+    (function(w){'use strict';
+      var M={siteId:'school',endpoint:w.MTA_ENDPOINT||'',_st:Date.now(),_sent:false};
+      function uid(){var k='mta_uid',v=localStorage.getItem(k);if(!v){v='u_'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);localStorage.setItem(k,v);}return v;}
+      function sid(){var k='mta_sid',n=Date.now(),d=localStorage.getItem(k),id,ts;if(d){var p=d.split('|');id=p[0];ts=+p[1];if(n-ts>18e5)id='';}if(!id)id='s_'+n.toString(36)+Math.random().toString(36).slice(2,6);localStorage.setItem(k,id+'|'+n);return id;}
+      function td(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+      function rd(k){try{return JSON.parse(localStorage.getItem(k)||'{}');}catch(e){return{};}}
+      function wr(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+      function ref(){var r=document.referrer||'';var u={};location.search.slice(1).split('&').forEach(function(kv){var p=kv.split('=');if(p[0]&&p[0].indexOf('utm_')===0)u[p[0]]=decodeURIComponent(p[1]||'');});var s=u.utm_source||(r?new URL(r).hostname:'直接访问');return{ref:r,source:s};}
+      function sk(){return'mta_store_'+M.siteId;}
+      function gs(){var s=rd(sk());if(!s.daily)s.daily={};if(!s.pages)s.pages={};if(!s.refs)s.refs={};if(!s.events)s.events={};if(!s.total)s.total={pv:0,uv:0,sessions:0};return s;}
+      function ss(s){wr(sk(),s);}
+      function beacon(url,p){if(!url)return;var b=JSON.stringify(p);try{if(w.fetch&&'keepalive'in Request.prototype){fetch(url,{method:'POST',body:b,headers:{'Content-Type':'application/json'},keepalive:true,mode:'cors'}).catch(function(){});return;}if(navigator.sendBeacon){navigator.sendBeacon(url,new Blob([b],{type:'application/json'}));return;}var x=new XMLHttpRequest();x.open('POST',url,true);x.setRequestHeader('Content-Type','application/json');x.send(b);}catch(e){}}
+      function pv(){var s=gs(),t=td(),d=s.daily[t]=s.daily[t]||{pv:0,uv:0,sessions:0},p=location.pathname,u=uid(),si=sid(),r=ref();d._uids=d._uids||{};d._sids=d._sids||{};var nu=!d._uids[u],ns=!d._sids[si];d._uids[u]=1;d._sids[si]=1;d.pv++;if(nu)d.uv++;if(ns)d.sessions++;s.total.pv++;if(nu)s.total.uv++;if(ns)s.total.sessions++;s.pages[p]=s.pages[p]||{pv:0,uv:0};s.pages[p].pv++;if(nu)s.pages[p].uv++;s.refs[r.source]=s.refs[r.source]||{pv:0,uv:0};s.refs[r.source].pv++;if(nu)s.refs[r.source].uv++;s.lastUpdate=Date.now();s.siteId=M.siteId;ss(s);if(M.endpoint)beacon(M.endpoint,{type:'pv',site:M.siteId,path:p,uid:u,sid:si,ref:r,ts:Date.now()});}
+      M.track=function(ev,d){var s=gs(),k=ev+'|'+td();s.events[k]=s.events[k]||{count:0,_uids:{}};s.events[k].count++;s.events[k]._uids[uid()]=1;s.events[k].uv=Object.keys(s.events[k]._uids).length;if(d){s.events[k].data=s.events[k].data||[];if(s.events[k].data.length<50)s.events[k].data.push(d);}ss(s);if(M.endpoint)beacon(M.endpoint,{type:'event',site:M.siteId,event:ev,data:d,uid:uid(),ts:Date.now()});};
+      function dur(){if(M._sent)return;M._sent=true;var d=Math.round((Date.now()-M._st)/1000),s=gs(),p=location.pathname;s.pages[p]=s.pages[p]||{pv:0,uv:0};s.pages[p].totalDur=(s.pages[p].totalDur||0)+d;s.pages[p].avgDur=Math.round(s.pages[p].totalDur/(s.pages[p].pv||1));ss(s);if(M.endpoint)beacon(M.endpoint,{type:'duration',site:M.siteId,path:p,dur:d,uid:uid(),ts:Date.now()});}
+      w.addEventListener('message',function(e){if(!e.data||e.data.type!=='mta_fetch')return;var s=gs();e.source.postMessage({type:'mta_data',site:M.siteId,store:s,uid:uid()},'');});
+      M.init=function(o){o=o||{};if(o.siteId)M.siteId=o.siteId;if(o.endpoint)M.endpoint=o.endpoint;if(document.readyState==='complete')pv();else w.addEventListener('load',pv);w.addEventListener('beforeunload',dur);if(w.history&&history.pushState){(function(p){history.pushState=function(){var r=p.apply(this,arguments);pv();return r;};})(history.pushState);}w.addEventListener('popstate',pv);};
+      M.init({siteId:'school'});
+      w.MTA=M;
+    })(window);
+    </script>
+</body>
+</html>
